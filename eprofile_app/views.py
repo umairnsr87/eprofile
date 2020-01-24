@@ -5,3 +5,9 @@ from django.contrib.auth.forms import UserCreationForm
 def home(request):
     return render(request,'index.html',{})
 
+
+def details(request):
+    if request.method=='POST':
+        phone = str( request.POST.get( "phone" ) )
+        print( "This is the phone number" + str( phone ) )
+    return render(request,'details.html',{})

@@ -2,6 +2,13 @@
 {% block body %}
 
 <h1>This is the index file</h1>
+<div class="container-fluid">
+    <div class="row">
+        <ul>
+            <li><h1><a href="{% url 'register' %}">Register</a></h1></li>
 
-h1><a href="{% url 'home' %}">home</a></h1>
+            <li><h1><a href="{% url 'home' %}">home</a></h1></li>
+        </ul>
+    </div>
+</div>
 {% endblock %}
